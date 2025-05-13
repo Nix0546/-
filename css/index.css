@@ -1,0 +1,79 @@
+hi{
+    font-size: 1.5em;
+    color: blue;
+}
+main{
+    padding: 1rem;
+    /* 给当前元素添加内框 */
+}
+.content {
+    max-width: 500px;
+    /* 给当前元素设置最大宽距 */
+    background-color: #fff;
+    /* 给当前元素添加背景色 */
+    border-radius: 8px;
+    /* 给当前元素左右居中 */
+    margin: 0 auto;
+}
+.search_input{
+    padding: 0.8rem;
+    background-color: #fff;
+}
+input,select{
+    width: 100%;
+    padding: 14px;
+    font-size: 16px;
+    margin-bottom: 0.2rem;
+    border-radius: 4px;
+    border: 1px solid #d9d9d9;
+}
+input:focus{
+    border:1px solid #1890ff;
+    /* 设置边框颜色 */
+    outline: none;
+    /* 去掉默认边框 */
+}
+button{
+    width: 100%;
+    background-color: #1890ff;
+    color: #fff;
+    font-size: 16px;
+    border: none;
+    border-radius: 4px;
+    padding: 12px;
+    transition: opacity 1s;
+    margin: 0 auto;
+}
+button:active{
+    opacity:0.8;
+    /* 给当前元素添加透明度 */
+}
+nav{
+    width: 100%;
+    height: 60px;
+    position: fixed;
+    /* 开启定位，相当于当前页面的窗口位置 */
+    left: 0;
+    /* 页面靠左为0 */
+    bottom: 0;
+    /* 页面底部为0 */
+    display: flex;
+    /* 开启flex布局 */
+    flex-direction: row;
+    /* 让元素在盒子里横向排列 */
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+}
+.nav_item{
+    padding: 0px 20px;
+    text-align: center;
+    line-height: 60px;
+}
+.active{
+    background-color: #1890ff;
+    border-radius: 16px;
+}
+.active a{
+    color:#fff;
+}
